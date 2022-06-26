@@ -7,10 +7,9 @@
     width: 44px;
     height: 44px;
     margin-right: 10px;
-}
-
-.social-list__item:last-child {
-    margin-right: 0;
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
 .social-list__link {
@@ -25,15 +24,15 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
 }
 
 .social-list__icon {
     fill: var(--icon-color);
-}
-
-.social-list__link:hover,
-.social-list__link:focus {
-    background-color: var(--accent-color);
 }
 
 .social-list__link:hover .social-list__icon,

@@ -9,6 +9,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .address-list__link {
@@ -19,6 +24,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .address-list__item:not(:last-child) {

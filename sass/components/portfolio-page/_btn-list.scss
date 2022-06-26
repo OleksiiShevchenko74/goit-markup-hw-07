@@ -1,3 +1,9 @@
+.btn-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
 .btn-list__btn {
     font-family: inherit;
     font-weight: 500;
@@ -15,21 +21,15 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
 
-.btn-list {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+    &:hover,
+    &:focus {
+            color: var(--white-color);
+            background-color: var(--accent-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
 }
 
 .btn-list__item:not(:last-child) {
     margin-right: 8px;
-}
-
-.btn-list__btn:hover,
-.btn-list__btn:focus {
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
